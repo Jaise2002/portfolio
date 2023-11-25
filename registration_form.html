@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>behaviour of the website</title>
+</head>
+
+<body>
+    <form action="">
+    <div>
+        <label for="number1">number1:</label>
+
+        <input type="number" name="number1" id="number1">
+    </div>
+    <div>
+        <label for="number2">number2:</label>
+
+        <input type="number" name="number2" id="number2">
+    </div>
+    <div>
+        <input type="button" value="+" onclick="add()">
+    </div>
+    <div>
+        <label for="answer">result:</label>
+
+        <input type="text" name="answer" readonly id="answer">
+    </div>
+</form>
+    <script src="./day2/newstyle.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            calculator
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>CALCULATOR</h1>
+        <table border="5" cellpadding="40" style="text-align:center" align="center" width="10%">
+            <tr>
+                <th colspan="5" > <label for="number1"></label> <label for="number2"></label></th>
+               
+            </tr>
+            <tr>
+                <th > <input type="button" value="1" onclick="1"> </th>
+                <th><input type="button" value="2"></th>
+                <th><input type="button" value="3"></th>
+                <th><input type="button" value="-" onclick="sub()"></th>
+                
+
+            </tr>
+            <tr>
+                <th ><input type="button" name="txt1" value="4" onclick="equation(this.value);"></th>
+                <th><input type="button" value="5"></th>
+                <th><input type="button" value="6"></th>
+                <th rowspan="2"><input type="button" value="+" onclick="add()"></th>
+                
+
+            </tr>
+            <tr>
+                <th ><input type="button" value="7"></th>
+                <th><input type="button" value="8"></th>
+                <th><input type="button" value="9"></th>
+                
+                
+
+            </tr>
+            <tr>
+                <th ><input type="button" value="0"></th>
+                <th><input type="button" value="*" onclick="mul()"></th>
+                <th><input type="button" value="/" onclick="div()"></th>
+                <th>=</th>
+                
+
+            </tr>
+            
+        </table>
+    </body>
+   <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</html>                           

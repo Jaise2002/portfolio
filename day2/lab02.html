@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="C:\Users\jaise\Desktop\html practice\2766600956.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+    <head>
+       
+        <title>WEEKEND BUS FORM</title>
+    </head>
+     
+    <body>
+        
+        <link rel="stylesheet" type="text/css" href="modd.css" />
+        
+        <form style="text-align:center" class="haii">
+            
+            <table border="4" cellspacing="5" cellpadding="10" style="text-align:center" align="center" width="75%">
+                <tr>
+                    <td>NAME : </td>
+                    <td> <input type="text" /></td>
+                </tr>
+                <tr>
+                    <td> REGISTRATION NUMBER : </td>
+                    <td> <input type="text" /></td>
+                </tr>
+                <tr>
+                    <td> GENDER : </td>
+                    <td>  <label><input type="radio"
+                        name="gender"
+                        value="male" />Male
+                        </label>
+                        <label>     <input type="radio"
+                          name="gender"
+                          value="female" />Female</label>
+                        </td>
+                </tr>
+                <tr>
+                    <td> EMAIL : </td>
+                    <td > <input type="email" id="Email"
+                        name="EMAIL" placeholder="firstname.lastname@department.christuniversity.in" size="50" ></td>
+                </tr>
+                <tr>
+                    <td> DEPARTMENT : </td>
+                    <td> <select name="DEPARTMENT">
+                        <option value="">select</option>
+                        <option value="BBA">BBA</option>
+                        <option value="BCOM">BCOM</option>
+                        <option value="BSC DS">BSC DS</option>
+                        <option value="BSC EA">BSC EA</option>
+                        <option value="MSC DS">MSC DS</option>
+                        <option value="MSC EA">MSC EA</option>
+                        <option value="LLB">LLB</option>
+                        <option value="LLM">LLM</option>
+                        <option value="MBA">MBA</option>
+                        <option value="MSC GFA">MSC GFA</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td> CONTACT : </td>
+                    <td> <input type="text" /></td>
+                </tr>
+    
+                <tr>
+                    <td> HOSTEL DETAILS : </td>
+                    <td> <select name="DEPARTMENT">
+                        <option value="">select</option>
+                        <option value="HILL VIEW">HILL VIEW</option>
+                        <option value="PORTOFINO">PORTOFINO</option>
+                        <option value="THICKET">THICKET</option>
+                        <option value="RESIDENCE">RESIDENCE</option>
+                        <option value="CELEBRATIONS">CELEBRATIONS</option>
+                        <option value="PRIVATE">PRIVATE</option></td>
+                </tr>
+                <tr>
+                    <td>FLAT NO. / VILLA NO. / ROOM NO. : </td>
+                    <td> <input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Are You Willing To Avail The Sunday Bus Service : </td>
+                   <td> <ul style="list-style-type:none;">
+                        <li><input type="checkbox"
+                                   value="YES" />
+                              YES
+                            <input type="checkbox"
+                                   value="NO" />
+                              NO
+                          </li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td>If Yes, Select the trip type
+                    </td>
+                    <td> <ul style="list-style-type:none;">
+                        <li><input type="checkbox"
+                                   value="Single Trip" />
+                              Single Trip
+                            <input type="checkbox"
+                                   value="Round Trip" />
+                              Round Trip
+                          </li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="Register">Register</button>     <button type="cancel">cancel</button></td>
+                </tr>
+            </table>
+            <h3> <b>LOGIN CREDENTIALS</b></h3>
+            <h4>
+            <p>
+                <label >Username : <input type="text" /></label>
+            </p>
+     
+            <p>
+                <label>Password : <input type="password" /></label>
+            </p>
+     
+            <p>
+                <button type="submit">Submit</button>     <button type="cancel">cancel</button>
+            </p>
+            </h4>   
+        </body>  
+        </form>
+  
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
