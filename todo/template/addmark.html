@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<body>
+    
+      </div>
+        <form action="{% url 'addmark' %}" method="post">
+            {% csrf_token %}
+            <!-- <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                 {% for x in mem %}
+                  <li><a class="dropdown-item" href="#">{{ x.id }}</a></li>
+                  {% endfor %}
+                  
+                </ul><br><br> -->
+                <label for="">id</label><br><br>
+            <input type="text" name="mark4"><br><br>
+            <label for="">malyalam</label><br><br>
+            <input type="text" name="mark1"><br><br>
+            <label for="">english</label><br><br>
+            <input type="text" name="mark2"><br><br>
+            <label for="">maths</label><br><br>
+            <input type="text" name="mark3"><br><br>
+            <button type="submit" id="new">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
